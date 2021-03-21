@@ -49,7 +49,7 @@ $(function() {
          //不允许出现在科学计数法数字的前面
          //不允许出现在科学计数法数字的中间
      var pos = e.target.selectionStart,
-           con = e,target.value;
+           con = e.target.value;
 
      if(e.key ==='e'){
        if(pos ===0 || con.indexOf('e') !==-1 || con.indexOf('E')  !== -1){
