@@ -1,0 +1,23 @@
+body,html{
+  margin:0;
+  padding:0;
+}
+#main{
+  margin: 50px auto;
+  width:260px;
+}
+#calc{
+  width:60px;
+  margin-left:53px;
+}
+span{
+  color:red;
+  margin-left:5px;
+}
+input{
+  margin:5px 0;
+}
+#width-validate, #height-validate{
+  color:red;
+  margin-left:55px;
+}
