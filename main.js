@@ -87,7 +87,7 @@ $(function() {
       
       //合法字符.
      if(e.key === '.'){
-      if（POS === 0 || con.indexOf('.') !== -1 ）{
+      if（pos === 0 || con.indexOf('.') !== -1 ）{
         e.preventDefault();
         return;
       }
