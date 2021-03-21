@@ -61,12 +61,58 @@ $(function() {
           e.preventDefault();
           return;
        }
+       if(pos > 0&&/[-.]/.test(con.slice(pos - 1,pos))){
+          e.preventDefault();
+          return;
+       }
      }
 
 
       //合法字符E
+      if(e.key ==='E'){
+       if(pos ===0 || con.indexOf('e') !==-1 || con.indexOf('E')  !== -1){
+         e.preventDefault();
+         return;
+       }
+
+       if(pos === 1 && con.substring(0,1) === '-'){
+          e.preventDefault();
+          return;
+       }
+       if(pos > 0&&/[-.]/.test(con.slice(pos - 1,pos))){
+          e.preventDefault();
+          return;
+       }
+     }
+      
       //合法字符.
+     if(e.key === '.'){
+      if（POS === 0 || con.indexOf('.') !== -1 ）{
+        e.preventDefault();
+        return;
+      }
+      if(pos > 0 && /[-eE]/.test(con.slice(0,pos))){
+        e.preventDefault();
+        return;
+      }
+     }
+     
       //合法字符-
+     if(e.key === '-'){
+       if(pos === 0 ){
+          e.preventDefault();
+         return;
+       }
+       if(pos > 0&&/[0-9.]/.test(content.slice(pos - 1,pos))){
+          e.preventDefault();
+         return;
+       }
+       if(pos > 0&&con.indexOf('-') !== -1){
+          e.preventDefault();
+         return;
+       }
+     }
+      
 
     });
     
