@@ -4,7 +4,7 @@ $(function() {
       $height = $('#height'),
       $btnCal = $('#calculate'),
       $perimeter = $('#perimeter'),
-      $area = $('#area'),
+      $area = $('#area');
       
 /*calc button click event*/
   $btnCal.click(function() {
