@@ -2,22 +2,26 @@ body,html{
   margin:0;
   padding:0;
 }
-#main{
+.main{
   margin: 50px auto;
-  width:260px;
+  width:370px;
+  font-size:1.1em;
 }
-#calc{
-  width:60px;
-  margin-left:53px;
+#calculate{
+  width:70px;
+  margin-left:62px;
 }
 span{
   color:red;
-  margin-left:5px;
 }
-input{
+input, label{
   margin:5px 0;
+  padding-left:5px;
+  font-size:1em;
 }
-#width-validate, #height-validate{
+#width-validation-message, 
+#height-validation-message{
   color:red;
-  margin-left:55px;
+  margin-left:62px;
+  font-size:0.8em;
 }
